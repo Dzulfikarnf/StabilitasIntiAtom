@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios" />
+</head>
+
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="eduford_img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <span class="material-symbols-outlined" onclick="hideMenu()">
+                arrow_back_ios
+                </span>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="about.html">INFO</a></li>
+                <li><a href="course.html">MATERI</a></li>
+                <li><a href="blog.html">SKEMA</a></li>
+                <li><a href="contact.html">KONTAK</a></li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()">
+            menu
+            </span>
+    </nav>
+    <h1>Model Mechine Learning
+        <br>
+        <br>
+        <br>
+    </h1>
+</div>
+</section>
+
+<!------ Blog Page Content ------>
+
+<section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <img src="eduford_img/certificate.png">
+            <h2>Tipe-Tipe Ketidakstabilan Inti</h2>
+            <p>&#49;. Peluruhan Alfa (α).<br>Inti berat sering meluruh dengan memancarkan partikel alfa (2 proton dan 2 neutron) untuk mengurangi ukuran inti dan meningkatkan stabilitas.</p>
+            <br>
+            <p>&#50;. Peluruhan Beta (β− atau β+)<br>Terjadi ketika rasio N/Z tidak seimbang. Misalnya:
+            <br>&#45; β−: Neutron berubah menjadi proton, memancarkan elektron dan antineutrino.
+            <br>&#45; β+: Proton berubah menjadi neutron, memancarkan positron dan neutrino.</p>
+            <br>
+            <p>&#51;. Peluruhan Gamma (γ)<br>Inti yang berada dalam keadaan tereksitasi dapat memancarkan radiasi elektromagnetik (sinar gamma) untuk mencapai keadaan energi lebih rendah.</p>
+            <br>
+            <p>&#52;. Fisi Nuklir<br>Inti berat seperti uranium atau plutonium dapat terbelah menjadi inti-inti yang lebih kecil, melepaskan energi besar. Ini adalah dasar reaksi dalam reaktor nuklir.</p>
+            <h2>Kebutuhan Data untuk Model</h2>
+            <p>Untuk membangun model machine learning yang akurat, dataset inti atom diperlukan dengan fitur sebagai berikut:</p>
+            <br>
+            <p>1. Jumlah Proton (Z): Karakteristik elemen.
+            <br>2. Jumlah Neutron (N): Menentukan nomor massa.
+            <br>3. Nomor Massa (A): Jumlah total proton dan neutron.
+            <br>4. Mass Excess: Informasi terkait energi inti.
+            <br>5. Energi Ikat (Binding Energy): Parameter penting dalam stabilitas.
+            <br>6. Kategori Stabilitas: Label target berupa klasifikasi stabilitas inti (sangat stabil, stabil, radioaktif, sangat radioaktif).
+            </p>
+            <h2>Klasifikasi Stabilitas Inti</h2>
+            <p>Kami membagi stabilitas inti atom ke dalam empat kelas:</p>
+            <br>
+            <p>
+                1. Sangat Stabil (Kelas 0). Inti dengan energi ikat tinggi, rasio N/Z ideal, dan tidak memiliki kecenderungan untuk meluruh. Contoh: Besi-56, Oksigen-16.
+                <br>
+                2. Stabil (Kelas 1). Inti yang stabil tetapi berada di dekat batas zona stabilitas. Biasanya merupakan isotop non-radioaktif.
+                <br>
+                3. Radioaktif (Kelas 2). Inti yang tidak stabil, mengalami peluruhan untuk mencapai kestabilan. Contoh: Karbon-14 (meluruh dengan memancarkan β−).
+                <br>
+                4. Sangat Radioaktif (Kelas 3). Inti yang sangat tidak stabil dengan waktu paruh sangat pendek. Biasanya ditemukan pada elemen berat seperti uranium atau isotop sintetis. Contoh: Uranium-238, Polonium-210.
+            </p>
+        </div>
+        <div class="blog-right">
+            <h3>Klasifikasi</h3>
+            <div>
+                <span>Sangat Stabil</span>
+                <span>Kelas 0</span>
+            </div>
+            <div>
+                <span>Stabil</span>
+                <span>Kelas 1</span>
+            </div>
+            <div>
+                <span>Radioaktif</span>
+                <span>Kelas 2</span>
+            </div>
+            <div>
+                <span>Sangat Radioaktif</span>
+                <span>Kelas 3</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!------ Facilities ------>
+
+
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Tentang Kami</h4>
+    <p>Kami adalah tim mahasiswa yang berkomitmen untuk menghadirkan inovasi<br>dalam prediksi dan klasifikasi stabilitas inti atom menggunakan teknologi machine learning. Melalui platform ini,<br>kami menghadirkan solusi edukasi berbasis teknologi untuk mendalami stabilitas inti atom secara interaktif dan inofatif</p>
+    <p>&#169; 2025 Stabilitas Inti Atom. All Rights Reserved</p>
+</section>
+
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+</body>
+</html>

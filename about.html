@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios" />
+</head>
+
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="eduford_img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <span class="material-symbols-outlined" onclick="hideMenu()">
+                arrow_back_ios
+                </span>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="about.html">INFO</a></li>
+                <li><a href="course.html">MATERI</a></li>
+                <li><a href="blog.html">SKEMA</a></li>
+                <li><a href="contact.html">KONTAK</a></li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()">
+            menu
+            </span>
+    </nav>
+    <h1>Tentang Kami
+    <br>
+    <br>
+    <br></h1>
+</div>
+</section>
+
+<!------ About Us Content ------>
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Tujuan Tim Kami Membuat Website Ini</h1>
+            <p>Website ini dikembangkan untuk memenuhi persyaratan proyek akhir mata kuliah Fisika Modern. Platform ini dirancang untuk berbagi wawasan, materi, dan simulasi terkait dengan mata kuliah tersebut.<br>Untuk mengetahui lebih lanjut tentang identitas tim kami, silakan klik tombol di bawah ini.</p>
+            <a href="anggota.html" class="hero-btn red-btn">PROFIL KAMI</a>
+        </div>
+        <div class="about-col">
+            <img src="eduford_img/about.jpg">
+        </div>
+    </div>
+</section>
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Tentang Kami</h4>
+    <p>Kami adalah tim mahasiswa yang berkomitmen untuk menghadirkan inovasi<br>dalam prediksi dan klasifikasi stabilitas inti atom menggunakan teknologi machine learning. Melalui platform ini,<br>kami menghadirkan solusi edukasi berbasis teknologi untuk mendalami stabilitas inti atom secara interaktif dan inofatif</p>
+    <p>&#169; 2025 Stabilitas Inti Atom. All Rights Reserved</p>
+</section>
+
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios" />
+</head>
+
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="eduford_img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <span class="material-symbols-outlined" onclick="hideMenu()">
+                arrow_back_ios
+                </span>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="about.html">INFO</a></li>
+                <li><a href="course.html">MATERI</a></li>
+                <li><a href="blog.html">SKEMA</a></li>
+                <li><a href="contact.html">KONTAK</a></li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()">
+            menu
+            </span>
+    </nav>
+<div class="text-box">
+    <h1>Stabilitas Inti Atom</h1>
+    <p>Prediksi dan Klasifikasi Stabilitas Inti Atom Menggunakan Machine Learning<br>adalah langkah inovatif untuk memanfaatkan teknologi modern dalam memahami dan mengkategorikan stabilitas inti atom.</p>
+    <a href="https://stabilitasatom.streamlit.app/" class="hero-btn">Mulai Simulasi</a>
+</div>
+</section>
+
+<!------course------>
+<section class="course">
+    <h1>Teori Dasar Fisika Modern</h1>
+    <p>Berikut adalah materi singkat untuk proyek ini.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Struktur Inti Atom</h3>
+            <p>Atom terdiri dari tiga partikel utama: proton, neutron, dan elektron.</p>
+        </div>
+        <div class="course-col">
+            <h3>Stabilitas Inti Atom</h3>
+            <p>Inti atom terdiri dari proton dan neutron, yang saling berinteraksi melalui gaya nuklir kuat dan gaya elektromagnetik.</p>
+        </div>
+        <div class="course-col">
+            <h3>Faktor-Faktor Penentu Stabilitas Inti Atom</h3>
+            <p>Gaya nuklir kuat, rasio neutron-proton, energi ikat nuklir, efek gaya coulomb, nomor massa, isotop dan stabilitas</p>
+        </div>
+    </div>
+
+
+</section>
+
+<!------ campus ------>
+<section class="campus">
+    <h1>Anggota Tim</h1>
+    <p>Kami mahasiswa program studi Fisika Universitas Pendidikan Indonesia</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="eduford_img/london.jpg">
+            <div class="layer">
+                <h3>Dzulfikar N.F.<br>2303377</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="eduford_img/newyork.png">
+            <div class="layer">
+                <h3>Merdifa C.K.<br>2305802</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="eduford_img/washington.png">
+            <div class="layer">
+                <h3>Nabila P.R.<br>2300425</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----- Facilities ------>
+
+<section class="facilities">
+    <h1>Model Machine Learning</h1>
+
+    <div class="row">
+        <div class="facilities-col">
+            <h3>Tipe-Tipe Ketidakstabilan Inti</h3>
+            <p>Peluruhan Alfa, peluruhan Beta, peluruhan Gamma, dan Fisi Nuklir.</p>
+        </div>
+        <div class="facilities-col">
+            <h3>Kebutuhan Data untuk Model</h3>
+            <p>Jumlah proton, jumlah neutron, nomor massa, mass excess, energi ikat, kategori stabilitas.</p>
+        </div>
+        <div class="facilities-col">
+            <h3>Klasifikasi Stabilitas Inti</h3>
+            <p>Stabil, sangat stabil, radioaktif, dan sangat radioaktif.</p>
+        </div>
+    </div>
+
+</section>
+
+<!------ testimonians ------>
+
+
+<!------ Call to Action ------>
+
+<section class="cta">
+    <h1>
+     Data yang kami gunakan dapat diakses pada laman berikut  
+    </h1>
+    <a href="https://drive.google.com/file/d/1c_3izsGPX_833vIv8WBIg9_cxVhBoQ0G/preview?usp=sharing" class="hero-btn">LIHAT DATA</a>
+</section>
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Tentang Kami</h4>
+    <p>Kami adalah tim mahasiswa yang berkomitmen untuk menghadirkan inovasi<br>dalam prediksi dan klasifikasi stabilitas inti atom menggunakan teknologi machine learning. Melalui platform ini,<br>kami menghadirkan solusi edukasi berbasis teknologi untuk mendalami stabilitas inti atom secara interaktif dan inofatif</p>
+    <p>&#169; 2025 Stabilitas Inti Atom. All Rights Reserved</p>
+</section>
+
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+</body>
+</html>
